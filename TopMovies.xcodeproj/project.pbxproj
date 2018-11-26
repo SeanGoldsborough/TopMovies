@@ -12,7 +12,18 @@
 		C6425DC421AC327500E056BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6425DC221AC327500E056BE /* Main.storyboard */; };
 		C6425DC621AC327800E056BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6425DC521AC327800E056BE /* Assets.xcassets */; };
 		C6425DC921AC327800E056BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6425DC721AC327800E056BE /* LaunchScreen.storyboard */; };
+		C6425DE021AC384200E056BE /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DDF21AC384200E056BE /* SettingsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6425DD921AC378F00E056BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6425DB321AC327500E056BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6425DBA21AC327500E056BE;
+			remoteInfo = TopMovies;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C6425DBB21AC327500E056BE /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,21 @@
 		C6425DC521AC327800E056BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6425DC821AC327800E056BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6425DCA21AC327800E056BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6425DD421AC378F00E056BE /* TopMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6425DD821AC378F00E056BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6425DDE21AC384100E056BE /* TopMoviesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopMoviesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6425DDF21AC384200E056BE /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C6425DB821AC327500E056BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6425DD121AC378F00E056BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C6425DBD21AC327500E056BE /* TopMovies */,
+				C6425DD521AC378F00E056BE /* TopMoviesTests */,
 				C6425DBC21AC327500E056BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C6425DBB21AC327500E056BE /* TopMovies.app */,
+				C6425DD421AC378F00E056BE /* TopMoviesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +86,16 @@
 				C6425DCA21AC327800E056BE /* Info.plist */,
 			);
 			path = TopMovies;
+			sourceTree = "<group>";
+		};
+		C6425DD521AC378F00E056BE /* TopMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6425DD821AC378F00E056BE /* Info.plist */,
+				C6425DDF21AC384200E056BE /* SettingsTests.swift */,
+				C6425DDE21AC384100E056BE /* TopMoviesTests-Bridging-Header.h */,
+			);
+			path = TopMoviesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +118,24 @@
 			productReference = C6425DBB21AC327500E056BE /* TopMovies.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C6425DD321AC378F00E056BE /* TopMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6425DDB21AC378F00E056BE /* Build configuration list for PBXNativeTarget "TopMoviesTests" */;
+			buildPhases = (
+				C6425DD021AC378F00E056BE /* Sources */,
+				C6425DD121AC378F00E056BE /* Frameworks */,
+				C6425DD221AC378F00E056BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6425DDA21AC378F00E056BE /* PBXTargetDependency */,
+			);
+			name = TopMoviesTests;
+			productName = TopMoviesTests;
+			productReference = C6425DD421AC378F00E056BE /* TopMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +148,11 @@
 				TargetAttributes = {
 					C6425DBA21AC327500E056BE = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					C6425DD321AC378F00E056BE = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = C6425DBA21AC327500E056BE;
 					};
 				};
 			};
@@ -113,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				C6425DBA21AC327500E056BE /* TopMovies */,
+				C6425DD321AC378F00E056BE /* TopMoviesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6425DD221AC378F00E056BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6425DD021AC378F00E056BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6425DE021AC384200E056BE /* SettingsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6425DDA21AC378F00E056BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6425DBA21AC327500E056BE /* TopMovies */;
+			targetProxy = C6425DD921AC378F00E056BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C6425DC221AC327500E056BE /* Main.storyboard */ = {
@@ -314,6 +395,51 @@
 			};
 			name = Release;
 		};
+		C6425DDC21AC378F00E056BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NA78F3F7G;
+				INFOPLIST_FILE = TopMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sean.TopMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TopMoviesTests/TopMoviesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopMovies.app/TopMovies";
+			};
+			name = Debug;
+		};
+		C6425DDD21AC378F00E056BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NA78F3F7G;
+				INFOPLIST_FILE = TopMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sean.TopMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TopMoviesTests/TopMoviesTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopMovies.app/TopMovies";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +457,15 @@
 			buildConfigurations = (
 				C6425DCE21AC327800E056BE /* Debug */,
 				C6425DCF21AC327800E056BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6425DDB21AC378F00E056BE /* Build configuration list for PBXNativeTarget "TopMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6425DDC21AC378F00E056BE /* Debug */,
+				C6425DDD21AC378F00E056BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
