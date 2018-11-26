@@ -1,5 +1,5 @@
 # TopMovies
-Created through **Test-Driven Development** practices, Top Movies is an iOS app that allows users to enter a number of their choice, and then download titles and movie poster images for the most popular movies via **iTunesJSONFeed**. Images as well as the associated URL and coordinates of the location are persisted via the **CoreData** framework.
+Created via **Test-Driven Development** practices, Top Movies is an iOS app that allows users to enter a number of their choice, and then download titles and movie poster images for the most popular movies via **iTunesJSONFeed**.
 
 ## Requirements
 - iOS 12.0 or greater
