@@ -12,17 +12,21 @@ import XCTest
 
 class SettingsTests: XCTestCase {
     
-    func test_title_is_Settings()  {
+    // CREATE THE VC IN A HELPER FUNCTION TO CLEAN UP DUPLICATED CODE
+    func settingsViewController() -> SettingsViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Settings")
+        let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
         let _ = vc.view //MUST INCLUDE OR VIEW DID LOAD DOESNT GET CALLED
+        return vc
+    }
+    
+    func test_title_is_Settings()  {
+        let vc = settingsViewController()
         XCTAssertEqual(vc.navigationItem.title, "Settings")
     }
     
     func test_label_is_Number_of_results_to_display() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
-        let _ = vc.view //MUST INCLUDE OR VIEW DID LOAD DOESNT GET CALLED
+        let vc = settingsViewController()
         XCTAssertEqual(vc.label.text, "Number of results to display")
     }
 }
