@@ -11,5 +11,12 @@ import XCTest
 @testable import TopMovies
 
 class SettingsTests: XCTestCase {
- 
+    
+    func test_title_is_Settings()  {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Settings")
+        let _ = vc.view //MUST INCLUDE OR VIEW DID LOAD DOESNT GET CALLED
+        XCTAssertEqual(vc.navigationItem.title, "Settings")
+    }
+    
 }
