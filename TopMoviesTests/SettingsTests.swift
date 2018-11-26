@@ -10,6 +10,7 @@ import Foundation
 import XCTest
 @testable import TopMovies
 
+
 class SettingsTests: XCTestCase {
     
     // CREATE THE VC IN A HELPER FUNCTION TO CLEAN UP DUPLICATED CODE
@@ -29,4 +30,10 @@ class SettingsTests: XCTestCase {
         let vc = settingsViewController()
         XCTAssertEqual(vc.label.text, "Number of results to display")
     }
+    
+    func test_number_placeholder_is_100() {
+        let vc = settingsViewController()
+         XCTAssertEqual(vc.numberTF.placeholder!, "100")
+    }
+
 }
