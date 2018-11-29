@@ -34,17 +34,29 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsq-eL-PkS">
+                                <rect key="frame" x="16" y="154" width="343" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Lsq-eL-PkS" firstAttribute="top" secondItem="roX-xg-gkc" secondAttribute="bottom" constant="8" id="1bf-tK-ogj"/>
                             <constraint firstItem="roX-xg-gkc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KUJ-q2-DgB"/>
                             <constraint firstItem="roX-xg-gkc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UyU-Aa-9Sb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lsq-eL-PkS" secondAttribute="trailing" constant="16" id="mx2-jE-Toz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="roX-xg-gkc" secondAttribute="trailing" constant="16" id="n64-Xp-Iwm"/>
+                            <constraint firstItem="Lsq-eL-PkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qri-DL-Iko"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="ATe-Bw-HJJ"/>
+                    <navigationItem key="navigationItem" title="Settings" id="ATe-Bw-HJJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Lp3-ww-u8c"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="errorLabel" destination="Lsq-eL-PkS" id="DKH-zh-Cix"/>
                         <outlet property="label" destination="vfe-OZ-Ziq" id="XGh-u4-GYH"/>
                         <outlet property="numberTF" destination="NoF-aw-5d0" id="M2e-0G-7jE"/>
                     </connections>

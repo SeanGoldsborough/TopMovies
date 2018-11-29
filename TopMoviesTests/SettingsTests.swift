@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import XCTest
 @testable import TopMovies
 
@@ -35,5 +36,28 @@ class SettingsTests: XCTestCase {
         let vc = settingsViewController()
          XCTAssertEqual(vc.numberTF.placeholder!, "100")
     }
+    
+    
+    func test_entering_z_in_number_field_shows_error() {
+        let vc = settingsViewController()
+        let _ = vc.textField(vc.numberTF, shouldChangeCharactersIn: NSRange(location: 0, length: 0),
+                    replacementString: "z")
+        XCTAssertFalse(vc.errorLabel.isHidden)
+    }
+    
+    
+    
+//    struct Movie {
+//        let title: String
+//        func asDictionary() -> [String:Any] {
+//            return ["title": title]
+//        }
+//    }
+//
+//    func test_asDictionary() {
+//        let movie = Movie(title: "Avengers")
+//        let dict = movie.asDictionary()
+//        XCTAssertEqual("Avengers", dict["title"] as! String)
+//    }
 
 }

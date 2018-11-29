@@ -14,6 +14,7 @@
 		C6425DC921AC327800E056BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6425DC721AC327800E056BE /* LaunchScreen.storyboard */; };
 		C6425DE021AC384200E056BE /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DDF21AC384200E056BE /* SettingsTests.swift */; };
 		C6425DE221AC3D7000E056BE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DE121AC3D7000E056BE /* SettingsViewController.swift */; };
+		C6425DE421AC467E00E056BE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DE321AC467E00E056BE /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		C6425DDE21AC384100E056BE /* TopMoviesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopMoviesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6425DDF21AC384200E056BE /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 		C6425DE121AC3D7000E056BE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C6425DE321AC467E00E056BE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C6425DBE21AC327500E056BE /* AppDelegate.swift */,
 				C6425DC021AC327500E056BE /* ViewController.swift */,
 				C6425DE121AC3D7000E056BE /* SettingsViewController.swift */,
+				C6425DE321AC467E00E056BE /* Movie.swift */,
 				C6425DC221AC327500E056BE /* Main.storyboard */,
 				C6425DC521AC327800E056BE /* Assets.xcassets */,
 				C6425DC721AC327800E056BE /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 			files = (
 				C6425DC121AC327500E056BE /* ViewController.swift in Sources */,
 				C6425DBF21AC327500E056BE /* AppDelegate.swift in Sources */,
+				C6425DE421AC467E00E056BE /* Movie.swift in Sources */,
 				C6425DE221AC3D7000E056BE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,18 +9,23 @@
 import Foundation
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var numberTF: UITextField!
     
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func textField(_ textField: UITextField,shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool {
+        return true
     }
     
     
