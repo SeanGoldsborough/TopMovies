@@ -55,6 +55,11 @@ class SettingsTests: XCTestCase {
         XCTAssertTrue(vc.errorLabel.isHidden)
     }
     
+    func test_number_textField_delegate_is_SettingsVC() {
+        let vc = settingsViewController()
+        XCTAssertTrue(vc.numberTF.delegate! === vc)
+    }
+    
     
     
 //    struct Movie {
