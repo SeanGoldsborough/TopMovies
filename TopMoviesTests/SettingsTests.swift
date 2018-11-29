@@ -50,6 +50,11 @@ class SettingsTests: XCTestCase {
         XCTAssertEqual(vc.errorLabel.text!, "ERROR: Please enter a number between 2 and 200.")
     }
     
+    func test_error_is_hidden() {
+        let vc = settingsViewController()
+        XCTAssertTrue(vc.errorLabel.isHidden)
+    }
+    
     
     
 //    struct Movie {
