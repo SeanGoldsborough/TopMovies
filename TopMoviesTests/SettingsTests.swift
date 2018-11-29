@@ -47,7 +47,7 @@ class SettingsTests: XCTestCase {
     
     func test_error_text_is_Please_enter_a_number_between_2_and_200() {
         let vc = settingsViewController()
-        XCTAssertEqual(vc.errorLabel.text, "ERROR: Please enter a number between 2 and 200.")
+        XCTAssertEqual(vc.errorLabel.text!, "ERROR: Please enter a number between 2 and 200.")
     }
     
     
