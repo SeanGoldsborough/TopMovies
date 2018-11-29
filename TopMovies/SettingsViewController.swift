@@ -21,10 +21,12 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func textField(_ textField: UITextField,shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool {
+        errorLabel.isHidden = false
         return true
     }
     
