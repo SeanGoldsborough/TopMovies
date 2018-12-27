@@ -9,12 +9,25 @@
 import Foundation
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController, UICollectionViewDataSource {
+    
+    @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //errorLabel.isHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
+    
     
 }
