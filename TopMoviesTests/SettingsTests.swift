@@ -60,6 +60,16 @@ class SettingsTests: XCTestCase {
         XCTAssertTrue(vc.numberTF.delegate! === vc)
     }
     
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        guard let _ = Int(string) else {
+//            errorLabel.isHidden = false
+//            return true
+//        }
+//        
+//        errorLabel.isHidden = true
+//        return true
+//    }
+    
     
     
 //    struct Movie {
