@@ -27,6 +27,13 @@ class MoviesViewControllerTests: XCTestCase {
         let vc = moviesViewController()
         XCTAssertEqual(vc.navigationItem.title!, "Top Movies")
     }
+    
+    func test_collection_view_has_zero_items_when_there_are_no_movies() {
+        let vc = moviesViewController()
+        let numberOfItems = vc.collectionView(vc.collectionView, numberOfItemsInSection: 0)
+        XCTAssertEqual(numberOfItems, 0)
+    }
+
 
     
 
