@@ -39,6 +39,6 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
 
 extension SettingsViewController {
     func enterText(_ text: String) {
-        let _ = textField(numberTF, shouldChangeCharactersIn: NSRange(location: numberTF.text!.count, length: 0), replacementString: "z")
+        let _ = textField(numberTF, shouldChangeCharactersIn: NSRange(location: numberTF.text!.count, length: 0), replacementString: text)
     }
 }
