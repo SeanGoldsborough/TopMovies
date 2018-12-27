@@ -17,6 +17,7 @@
 		C6425DE421AC467E00E056BE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DE321AC467E00E056BE /* Movie.swift */; };
 		C6B9AF6521D5780600526447 /* MoviesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6421D5780600526447 /* MoviesViewControllerTests.swift */; };
 		C6B9AF6721D5781A00526447 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6621D5781A00526447 /* MoviesViewController.swift */; };
+		C6B9AF6821D57A2D00526447 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6621D5781A00526447 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 			files = (
 				C6425DE021AC384200E056BE /* SettingsTests.swift in Sources */,
 				C6B9AF6521D5780600526447 /* MoviesViewControllerTests.swift in Sources */,
+				C6B9AF6821D57A2D00526447 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
