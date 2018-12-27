@@ -18,11 +18,16 @@ class MoviesViewControllerTests: XCTestCase {
             withIdentifier: "MoviesViewController")
             as! MoviesViewController
         let _ = vc.view
-        return vc }
+        return vc
+        
+    }
+    
+    func test_title_is_Top_Movies() {
+        let vc = moviesViewController()
+        XCTAssertEqual(vc.navigationItem.title!, "Top Movies")
+    }
+
+    
 
 }
 
-func test_title_is_Top_Movies() {
-    let vc = moviesViewController()
-    XCTAssertEqual(vc.navigationItem.title!, "Top Movies")
-}
