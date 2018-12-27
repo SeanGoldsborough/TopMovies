@@ -30,7 +30,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         let swiftRange = Range(range, in: text)!
         let newString = text.replacingCharacters(in: swiftRange, with: string)
         
-        guard let _ = Int(string) else {
+        guard let value = Int(newString), value >= 2 else {
             errorLabel.isHidden = false
             return true
         }
