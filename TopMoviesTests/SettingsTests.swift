@@ -79,6 +79,12 @@ class SettingsTests: XCTestCase {
         XCTAssertFalse(vc.errorLabel.isHidden)
     }
     
+    func test_number_does_not_allow_1() {
+        let vc = settingsViewController()
+        vc.enterText("1")
+        XCTAssertFalse(vc.errorLabel.isHidden)
+    }
+    
     
     
 //    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
