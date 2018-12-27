@@ -33,6 +33,15 @@ class MoviesViewControllerTests: XCTestCase {
         let numberOfItems = vc.collectionView(vc.collectionView, numberOfItemsInSection: 0)
         XCTAssertEqual(numberOfItems, 0)
     }
+    
+    func test_collection_view_has_two_items_when_there_are_two_movies() {
+        let vc = moviesViewController()
+        let movie = Movie()
+        vc.movies = [movie, movie]
+        let numberOfItems = vc.collectionView(vc.collectionView,
+                                              numberOfItemsInSection: 0)
+        XCTAssertEqual(numberOfItems, 2)
+    }
 
 
     
