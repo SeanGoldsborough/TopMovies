@@ -38,12 +38,12 @@ class SettingsTests: XCTestCase {
     }
     
     
-    func test_entering_z_in_number_field_shows_error() {
-        let vc = settingsViewController()
-        let _ = vc.textField(vc.numberTF, shouldChangeCharactersIn: NSRange(location: 0, length: 0),
-                    replacementString: "z")
-        XCTAssertFalse(vc.errorLabel.isHidden)
-    }
+//    func test_entering_z_in_number_field_shows_error() {
+//        let vc = settingsViewController()
+//        let _ = vc.textField(vc.numberTF, shouldChangeCharactersIn: NSRange(location: 0, length: 0),
+//                    replacementString: "z")
+//        XCTAssertFalse(vc.errorLabel.isHidden)
+//    }
     
     func test_error_text_is_Please_enter_a_number_between_2_and_200() {
         let vc = settingsViewController()
@@ -60,12 +60,18 @@ class SettingsTests: XCTestCase {
         XCTAssertTrue(vc.numberTF.delegate! === vc)
     }
     
+    func test_entering_z_in_number_field_shows_error() {
+        let vc = settingsViewController()
+        vc.enterText("z")
+        XCTAssertFalse(vc.errorLabel.isHidden)
+    }
+    
 //    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        guard let _ = Int(string) else {
 //            errorLabel.isHidden = false
 //            return true
 //        }
-//        
+//
 //        errorLabel.isHidden = true
 //        return true
 //    }
