@@ -13,10 +13,12 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    var movies = [Movie]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
+//        self.collectionView.dataSource = self
+//        self.collectionView.delegate = self
     }
     
     func collectionView(_ collectionView: UICollectionView,

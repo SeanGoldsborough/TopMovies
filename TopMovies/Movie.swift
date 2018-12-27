@@ -8,10 +8,13 @@
 
 import Foundation
 
-struct Movie: Codable {
-    let title: String
+//struct Movie: Codable {
+//    let title: String
+//
+//    func asDictionary() -> [String:Any] {
+//        return [String:Any]()
+//    }
+//}
+struct Movie {
     
-    func asDictionary() -> [String:Any] {
-        return [String:Any]()
-    }
 }

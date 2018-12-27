@@ -36,6 +36,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="f62-Zv-clx" id="TES-1g-GDd"/>
+                                    <outlet property="delegate" destination="f62-Zv-clx" id="DC9-U8-bLX"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
