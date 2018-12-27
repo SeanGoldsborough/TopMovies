@@ -66,6 +66,14 @@ class SettingsTests: XCTestCase {
         XCTAssertFalse(vc.errorLabel.isHidden)
     }
     
+    func test_entering_2_in_number_field_is_allowed() {
+        let vc = settingsViewController()
+        vc.enterText("2")
+        XCTAssertTrue(vc.errorLabel.isHidden)
+    }
+    
+    
+    
 //    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 //        guard let _ = Int(string) else {
 //            errorLabel.isHidden = false
