@@ -22,3 +22,7 @@ class MoviesViewControllerTests: XCTestCase {
 
 }
 
+func test_title_is_Top_Movies() {
+    let vc = moviesViewController()
+    XCTAssertEqual(vc.navigationItem.title!, "Top Movies")
+}
