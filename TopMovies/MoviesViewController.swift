@@ -11,4 +11,10 @@ import UIKit
 
 class MoviesViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //errorLabel.isHidden = true
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
 }

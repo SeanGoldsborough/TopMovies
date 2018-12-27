@@ -12,7 +12,7 @@
         <!--Top Movies-->
         <scene sceneID="VNE-e5-iIA">
             <objects>
-                <viewController storyboardIdentifier="MoviesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f62-Zv-clx" customClass="MoviesViewController" customModule="TopMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoviesViewController" title="Top Movies" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f62-Zv-clx" customClass="MoviesViewController" customModule="TopMovies" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uvb-uM-CLU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
