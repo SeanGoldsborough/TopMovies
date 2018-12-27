@@ -26,6 +26,10 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text = numberTF.text!
+        let swiftRange = Range(range, in: text)!
+        let newString = text.replacingCharacters(in: swiftRange, with: string)
+        
         guard let _ = Int(string) else {
             errorLabel.isHidden = false
             return true
