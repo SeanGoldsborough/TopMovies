@@ -31,8 +31,12 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        return collectionView.dequeueReusableCell(
+            withReuseIdentifier: "Movie",
+            for: indexPath)
     }
+    
+    
     
     
     

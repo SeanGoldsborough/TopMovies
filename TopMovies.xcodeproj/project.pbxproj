@@ -17,6 +17,7 @@
 		C6425DE421AC467E00E056BE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6425DE321AC467E00E056BE /* Movie.swift */; };
 		C6B9AF6521D5780600526447 /* MoviesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6421D5780600526447 /* MoviesViewControllerTests.swift */; };
 		C6B9AF6921D57C5000526447 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6621D5781A00526447 /* MoviesViewController.swift */; };
+		C6B9AF6B21D5C08A00526447 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AF6A21D5C08A00526447 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C6425DE321AC467E00E056BE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C6B9AF6421D5780600526447 /* MoviesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewControllerTests.swift; sourceTree = "<group>"; };
 		C6B9AF6621D5781A00526447 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		C6B9AF6A21D5C08A00526447 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				C6425DC021AC327500E056BE /* ViewController.swift */,
 				C6425DE121AC3D7000E056BE /* SettingsViewController.swift */,
 				C6B9AF6621D5781A00526447 /* MoviesViewController.swift */,
+				C6B9AF6A21D5C08A00526447 /* MovieCell.swift */,
 				C6425DE321AC467E00E056BE /* Movie.swift */,
 				C6425DC221AC327500E056BE /* Main.storyboard */,
 				C6425DC521AC327800E056BE /* Assets.xcassets */,
@@ -214,6 +217,7 @@
 			files = (
 				C6425DC121AC327500E056BE /* ViewController.swift in Sources */,
 				C6B9AF6921D57C5000526447 /* MoviesViewController.swift in Sources */,
+				C6B9AF6B21D5C08A00526447 /* MovieCell.swift in Sources */,
 				C6425DBF21AC327500E056BE /* AppDelegate.swift in Sources */,
 				C6425DE421AC467E00E056BE /* Movie.swift in Sources */,
 				C6425DE221AC3D7000E056BE /* SettingsViewController.swift in Sources */,
