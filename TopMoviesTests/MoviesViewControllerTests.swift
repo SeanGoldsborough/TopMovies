@@ -38,9 +38,17 @@ class MoviesViewControllerTests: XCTestCase {
         let vc = moviesViewController()
         let movie = Movie()
         vc.movies = [movie, movie]
-        let numberOfItems = vc.collectionView(vc.collectionView,
-                                              numberOfItemsInSection: 0)
+        let numberOfItems = vc.collectionView(vc.collectionView, numberOfItemsInSection: 0)
         XCTAssertEqual(numberOfItems, 2)
+    }
+    
+    func test_first_cell_title_is_Jumanji_when_movie_is_Jumanji() {
+        let vc = moviesViewController()
+        let movie = createMovie(title: "Jumanji: Welcome to the Jungle")
+        vc.movies = [movie]
+        let cell = vc.collectionView(vc.collectionView,
+                                     cellForItemAt: IndexPath(row: 0, section: 0)) as! MovieCell
+        XCTAssertEqual(cell.title.text!, movie.title)
     }
 
 
