@@ -21,6 +21,10 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource {
 //        self.collectionView.delegate = self
     }
     
+//    func createMovie(title: String = "TEST") -> Movie {
+//        return Movie(title: title)
+//    }
+    
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return movies.count     

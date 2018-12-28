@@ -16,5 +16,12 @@ import Foundation
 //    }
 //}
 struct Movie {
-    
+    let title: String
+}
+
+
+
+
+func createMovie(title: String = "TEST") -> Movie {
+    return Movie(title: title)
 }
